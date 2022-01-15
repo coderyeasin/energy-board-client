@@ -11,7 +11,6 @@ const Intensity = () => {
         console.log(data);
 
         const intensity = data.filter((e) => e.intensity);
-
         setIntensity(intensity);
         console.log(intensity);
       });
