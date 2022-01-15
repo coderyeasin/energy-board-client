@@ -8,7 +8,7 @@ const Year = () => {
     fetch("https://powerful-scrubland-85356.herokuapp.com/country_status")
       .then((res) => res.json())
       .then((data) => {
-        const year = data.filter((e) => e.start_year === e.end_year);
+        const year = data.filter((e) => e.start_year && e.end_year);
         console.log(year);
         setYear(year);
       });

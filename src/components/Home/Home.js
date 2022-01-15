@@ -1,6 +1,6 @@
 import React from "react";
-import Graph from "../Graph";
-import LineChart from "../LineChart";
+import Graph from "../Visual/Graph";
+import LineChart from "../Visual/LineChart";
 
 const Home = () => {
   return (
