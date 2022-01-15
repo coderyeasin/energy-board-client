@@ -1,8 +1,12 @@
 import React from "react";
 import { Tab, Tabs } from "react-bootstrap";
+import Country from "../Data/Country";
 import Intensity from "../Data/Intensity";
 import Likelihood from "../Data/Likelihood";
+import Region from "../Data/Region";
 import Relevance from "../Data/Relevance";
+import Topics from "../Data/Topics";
+import Year from "../Data/Year";
 
 // Intensity
 // Likelihood
@@ -16,7 +20,7 @@ import Relevance from "../Data/Relevance";
 const Static = () => {
   return (
     <div className="mx-5">
-      <h3>Statically Visualized</h3>
+      <h3 className="mt-3">Statically Visualized</h3>
       <Tabs
         defaultActiveKey="intensity"
         id="uncontrolled-tab-example"
@@ -30,6 +34,19 @@ const Static = () => {
         </Tab>
         <Tab eventKey="relevance" title="Relevance">
           <Relevance />
+        </Tab>
+        <Tab eventKey="year" title="Year">
+          <Year />
+        </Tab>
+
+        <Tab eventKey="country" title="Country">
+          <Country />
+        </Tab>
+        <Tab eventKey="topics" title="Topics">
+          <Topics />
+        </Tab>
+        <Tab eventKey="region" title="Region">
+          <Region />
         </Tab>
       </Tabs>
     </div>
