@@ -10,10 +10,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path="/home" element={<Home />} />
-            <Route path="/static" element={<Static />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/static" element={<Static />} />
         </Routes>
       </BrowserRouter>
       ,

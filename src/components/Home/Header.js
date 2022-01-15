@@ -1,13 +1,15 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href="#" className="text-light">
+            Visualization
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -15,9 +17,12 @@ const Header = () => {
               style={{ maxHeight: "100px", alignItems: "center" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Dashboard</Nav.Link>
-              <Link className="text-decoration-none text-dark" to="/static">
-                Static
+              <Link className=" text-dark" to="/home">
+                <Button variant="info">Dashboard</Button>
+              </Link>
+
+              <Link to="/static" className="text-dark ms-2">
+                <Button variant="success">Static</Button>
               </Link>
             </Nav>
           </Navbar.Collapse>
