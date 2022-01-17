@@ -61,15 +61,12 @@ const LineChart = () => {
 
         const region = data.filter((e) => e.region);
         console.log(region);
-
-        //   const city = data.filter(e => e.city)
-        //   console.log(city);
       });
   }, []);
 
   return (
     <div>
-      <h3>Data Visualization</h3>
+      <h3 className="mt-3">Data Visualization</h3>
       <svg ref={svgRef}>Data</svg>
     </div>
   );
